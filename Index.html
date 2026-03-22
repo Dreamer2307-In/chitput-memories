@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHITPUT MOMENTS 🫶</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  background: black;
+  padding: 15px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #222;
+  z-index: 10;
+}
+
+/* FEED */
+.feed {
+  max-width: 500px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+/* POST CARD */
+.post {
+  margin: 20px 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #111;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+/* IMAGE */
+.post img {
+  width: 100%;
+  display: block;
+}
+
+/* CONTENT */
+.post-content {
+  padding: 12px;
+}
+
+.username {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.caption {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* LIKE BAR */
+.actions {
+  display: flex;
+  gap: 15px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.actions span:hover {
+  transform: scale(1.2);
+}
+
+/* FINAL MESSAGE */
+.final {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background: white;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+/* FULLSCREEN POPUP */
+#fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 100;
+}
+
+#fullscreen.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#fullscreen img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 15px;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header"> Week OF Memories 😝😝 </div>
+
+<div class="feed">
+
+  <!-- POST 1 -->
+  <div class="post">
+    <img src="FIRST.png">
+    <div class="post-content">
+      <div class="username">CANADA WALE AAGYE OYEE !</div>
+      <div class="caption">AB MILENGE GIFTS AND OFCOURSE CHOCOLATES🤤</div>
+
+    </div>
+  </div>
+
+  <!-- POST 2 -->
+  <div class="post">
+    <img src="ARMY.jpeg">
+    <div class="post-content">
+      <div class="username">LO JI INDIA AANDE HE DESHBHAKTI ON🫡</div>
+      <div class="caption">Oh alg gall h ki jana toh wapis CANADA he h inhone but she is CHARAN didi bina drame ke kaisee reh skte h yaawrr😝</div>
+    </div>
+  </div>
+
+  <!-- POST 3 -->
+  <div class="post">
+    <img src="Mitar.jpeg">
+    <div class="post-content">
+      <div class="username">YAAR DOST😈</div>
+      <div class="caption">EH sadi haigi h GANG jide vich DBKA sirf aur sirf JATT aka CHARAN didi da he h💪SO she is our leader and hum inki baat maan he lete h CUZ "DIDI KONSA TILAK NAGAR SE AAYE H😤😤" </div>
+      <div class="actions">
+      </div>
+    </div>
+  </div>
+
+  <!-- POST 4 -->
+  <div class="post">
+    <img src="couple2.jpeg">
+    <div class="post-content">
+      <div class="username">#ROKA💍</div>
+      <div class="caption">THIS IS THE DAY !! the day when they got engaged and got the TITLE of "JATT and JATTI🥹" and also THE SHAGAN🤑....YOU GUYS LOOK SO PRETTY!!💖 but jo didar paaji hassi rok rhe h na hatts off to him😂 </div>
+    </div>
+  </div>
+
+
+  <!-- POST 5 -->
+  <div class="post">
+    <img src="DANCE.jpeg">
+    <div class="post-content">
+      <div class="username">LETS NACHO🕺💃</div>
+      <div class="caption">DIDAR PAAJI NE POORA FUNCTION EK HE DANCE STEP SE NIKAL DIYA BHAII😭😭</div>
+    </div>
+  </div>
+
+  <!-- POST 6 -->
+  <div class="post">
+    <img src="AVTAR.jpeg">
+    <div class="post-content">
+      <div class="username">AVTAR👽</div>
+      <div class="caption">YE kya kr rhe h yaha? ...he is just everywhere anyways keep scrolling </div>
+  </div>
+
+    <!-- POST 7 -->
+  <div class="post">
+    <img src="simar.jpeg">
+    <div class="post-content">
+      <div class="username">DIDI WITH HER CHOTU AND MOTU BHAI👶🏻</div>
+      <div class="caption"></div>
+
+  </div>
+
+    <!-- POST 8 -->
+  <div class="post">
+    <img src="me.jpeg">
+    <div class="post-content">
+      <div class="username">LOOK WHO STOLE YOUR JATTI😈</div>
+      <div class="caption"></div>
+
+    </div>
+  </div>
+
+    <!-- POST 9 -->
+  <div class="post">
+    <img src="dime.jpeg">
+    <div class="post-content">
+      <div class="username">One last moment before didi went back to KNEDAA🥹</div>
+      <div class="caption">Itni jldii kyuu chle gyee😭😭</div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- FINAL MESSAGE -->
+<div class="final">
+  <h2>BYE BYE DIDII🥹</h2>
+  <p>We'll miss you soo much didi ...time da pta he nhi lgeyaa ...abhi toh aap aaye he thee itni jldi chle bhi gayee😭😭 khair i had a lot of fun with youu guysss ...bhtt bht bhtt bhtt achee hoo aap diiddiii and  ofc Didar paji bhi...i'll never forget your lame jokes😂 and yes "AAP NA ROHIT HO"🤓🤓bsss ab jldiii see wapis aajaoo khaali khaali lg rha h sab aapke aur didar paaji ke bina just like that "KHALI DHABA😝"...PLEASEE COME BACK SOON cuz this chitput can't wait to annoy you againn😋THANK YOU SO MUCH FOR EVERYTHING YOU DID FOR ME AND SIMAR🫶</p>
+  <button onclick="playVoice()">Play Message 🎤</button>
+</div>
+
+<audio id="voiceNote">
+  <source src="voice.mp3" type="audio/mpeg">
+</audio>
+
+<div id="fullscreen">
+  <span id="closeBtn">&times;</span>
+  <img id="fullImg">
+</div>
+
+<script>
+function playVoice(){
+  document.getElementById("voiceNote").play();
+}
+
+// ❤️ like toggle
+document.querySelectorAll('.actions span:first-child').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.textContent = btn.textContent === '❤️' ? '💖' : '❤️';
+  });
+});
+const posts = document.querySelectorAll('.post img');
+const fullscreen = document.getElementById('fullscreen');
+const fullImg = document.getElementById('fullImg');
+const closeBtn = document.getElementById('closeBtn');
+
+// open fullscreen
+posts.forEach(img => {
+  img.addEventListener('click', () => {
+    fullscreen.classList.add('active');
+    fullImg.src = img.src;
+  });
+});
+
+// close fullscreen
+closeBtn.addEventListener('click', () => {
+  fullscreen.classList.remove('active');
+});
+
+// also close on background click
+fullscreen.addEventListener('click', (e) => {
+  if (e.target !== fullImg) {
+    fullscreen.classList.remove('active');
+  }
+});
+</script>
+
+
+</body>
+</html>
